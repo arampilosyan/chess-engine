@@ -1,0 +1,26 @@
+# Put these values into config.yml of the lichess-bot project
+# (https://github.com/lichess-bot-devs/lichess-bot), copied from config.yml.default.
+token: "PASTE_YOUR_LICHESS_BOT_TOKEN_HERE"
+url: "https://lichess.org/"
+
+engine:
+  dir: "/FULL/PATH/TO/chess-engine"
+  name: "run_engine.sh"
+  protocol: "uci"
+  ponder: false
+  polyglot:
+    enabled: false
+  online_moves:
+    chessdb_book:
+      enabled: false
+    lichess_cloud_analysis:
+      enabled: false
+
+challenge:
+  concurrency: 1
+  variants:
+    - standard
+  time_controls:
+    - bullet
+    - blitz
+    - rapid
